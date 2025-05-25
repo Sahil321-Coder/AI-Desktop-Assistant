@@ -14,4 +14,5 @@
 
 1. [Day 1](#day1)  
    *25-05-2025*
-   *
+![3DMODEL](https://github.com/user-attachments/assets/57c4ece0-62ca-474c-a457-18d584a50dfa)
+
