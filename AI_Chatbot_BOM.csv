@@ -1,0 +1,9 @@
+Component,Description,Quantity,Notes
+Arduino Uno,Microcontroller Board,1,Main control unit
+SSD1306 OLED Display,"0.96"" I2C OLED, 128x64",1,For displaying animated eyes
+Breadboard,400-point or similar,1,For prototyping circuit
+Push Button,4-pin tactile push button,1,For user input
+Jumper Wires,Male-to-Male,10+,For circuit connections
+USB Cable,USB A to B,1,To power Arduino or for uploading code
+Power Bank or USB Battery,5V Output,1,To run Arduino without laptop
+Speaker,"Bluetooth Speaker (e.g., Govo GO Surround 300)",1,For music playback via PC
