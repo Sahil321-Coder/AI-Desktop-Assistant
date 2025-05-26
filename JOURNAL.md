@@ -18,7 +18,8 @@ I started by taking measurements of Arduino and other parts I am going to use, a
 
 So I have made this Circuit Diagram in WOKWI, and you can also see the BOM File in CSV Format on the Main page, I have listed all the the materials I have used in that file.
 
-![Screenshot 2025-05-26 151102](https://github.com/user-attachments/assets/318790f9-be05-4e02-bef4-a8c282e1f162)
+![Screenshot 2025-05-26 154405](https://github.com/user-attachments/assets/a7dc0d99-2674-40f5-b842-e473253d194b)
+
 
 
 **Total time spent: 1h**
