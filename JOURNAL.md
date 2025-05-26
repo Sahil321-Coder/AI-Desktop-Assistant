@@ -5,13 +5,20 @@ Description: "An AI Desk Assistant Ideal For Working"
 Created_at: "25-05-2025"
 ---
 
-1. [Day 1](#day1)  
-   *25-05-2025*
-   * I have started taking Measurements of the components I will be using in the project, and side-by-side, I was making the 3D Model based on those measurements. I was a beginner to all that 3D Modelling
-     So I think it is hard to do it
-     
-![3DMODEL](https://github.com/user-attachments/assets/57c4ece0-62ca-474c-a457-18d584a50dfa)
+# May 25th: Designed The 3D Model in Blender!
 
-   * I have successfully made the 3D Model in Blender 4.4, but I had some difficulties making it,  taking the size of the Arduino, Breadboard, 0.96 Inch Display and then making that sure that they all
-     will fit inside the 3D Model
-   * * Time Spent - 2.3 hours *
+I started by taking measurements of Arduino and other parts I am going to use, and designed it so that all these will fit inside the 3D Model, and sucessfully made the 3D Model.
+
+![Screenshot 2025-05-25 134215](https://github.com/user-attachments/assets/683ecc79-a0c6-4bd7-b62d-e074624426e3)
+
+
+**Total time spent: 1.7h**
+
+# May 26th: Made the BOM File and the Wiring Diagram !
+
+[actual journal content - what did you do?]
+
+![wiring](https://github.com/user-attachments/assets/784a9135-ad62-4b61-ae73-0fea334a43cb)
+
+**Total time spent: 1h**
+
