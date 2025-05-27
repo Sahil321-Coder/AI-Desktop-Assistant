@@ -26,7 +26,7 @@ So I have made this Circuit Diagram in WOKWI, and you can also see the BOM File 
 
 # May 27th: Programmed the Arduino Code and compiled!
 
-I have sucessfully programmed the Arduino code and now it has features like taking real time weather in Nashik ( Where I Live ), It will take weatehr from the API Key of Openweather, and also plays music , I  have just put 1 Music inside it so it will play only one.
+I have sucessfully programmed the Arduino code and now it has features like taking real time weather in Nashik ( Where I Live ), It will take weatehr from the API Key of Openweather, and also plays music , I  have just put 1 Music inside it so it will play only one. This is the Wokwi Simulation Link "https://wokwi.com/projects/432008413019172865"
 
 ![Screenshot 2025-05-27 132608](https://github.com/user-attachments/assets/bf38f1d7-71b0-46e5-abe1-f88cb06e35c4)
 
