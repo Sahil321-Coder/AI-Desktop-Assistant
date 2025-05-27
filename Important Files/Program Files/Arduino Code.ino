@@ -1,3 +1,7 @@
+//Here you need to install two libraries that are ( Adafruit_GFX ) and  ( Adafruit_SSD1306 )
+//Dont forget to use the wiring diagram
+//Good Luck!
+
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
