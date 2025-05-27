@@ -1,0 +1,14 @@
+OLED Display
+
+VCC > 5.5V
+GND > GND
+SCL > A5
+SDA > A4
+
+
+Push Button
+
+One leg > GND
+Other  Leg > D2
+
+( Note : Use a 4 Pin Push Button )
