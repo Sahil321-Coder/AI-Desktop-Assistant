@@ -31,11 +31,9 @@ The Table :
 
 |     Item      |                                                        Purpose                                                               |     Source    |     Price     |    Shipping    | Total Price
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------- | -------------- | --------------------- |
-|4 PIN Push Button           |Changing between Modes                                                                                                        |Local Store          |$0.12            |   $0       |  $0.12                     |
-|SSD1306 OLED Display           |For displaying animated eyes, Time, Short Answers, & Weather                                                                                    |Local Store     |N/A            |      N/A       |                       |
-|Breadboard           |For Connecting multiple things to GND and VCC                                                      |Local store     |$1.25           |      $0        |  $1.25           |
-|Jumper Wires    |For circuit connections                                                       |eBhoot Electronics ( Online )     |$0.94           |      $0.5        |  $0.99                     |
+|SSD1306 OLED Display           |For displaying animated eyes, Time, Short Answers, & Weather                                                                                    |Robu.in     |$5.81            |      $0.25       |  $6.06                     |
 |Power Bank or USB Battery|Main power unit                                                                  |Amazon         |$8.99          |      $1        |   $9.99            |
-|USB Cable |To power Arduino and for uploading code                                                             |Ships with Arduino         |$14.04          |      $3       |       $17.04               |
-|Govo GO Surround 300      |To listen to music and the answers to questions                                                                                |Govo.com         |$5.49          |      $0        |                       |
-|Arduino     | Microcontroller Board                                  |Arduino        |  |          |               |
+|50 CM Micro USB Cable |To power Arduino and for uploading code                                                             |Robu.in         |$0.37          |      $0.24       |       $0.61              |
+|Arduino MKR Zero    | Microcontroller Board                                  |Arduino        | $31.20 |   $13.02    |      $44.22         |
+|Rasberry Pi SD Card    | Storage                                 |N/A        | $13.55 |   $2.00    |      $14.55         |   
+|Raspberry Pi 4  B ( 4 GB )  | Offline Controller                                |Robu.in        | $64 |   $2    |      $66         | 
