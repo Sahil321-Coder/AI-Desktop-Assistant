@@ -8,7 +8,7 @@ import time
 
 # ----------------- CONFIGURATION -----------------
 
-OPENROUTER_API_KEY = "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"  # Your OpenRouter API key here
+OPENROUTER_API_KEY = "<Your OPENROUTER API Key>"  # Your OpenRouter API key here
 SERIAL_PORT = "COM7"  # Change to your Arduino COM port
 SERIAL_BAUDRATE = 9600
 CITY = "Nashik"
