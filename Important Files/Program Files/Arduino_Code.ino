@@ -14,8 +14,8 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
 const int buttonPin = 2;
 int mode = 0;
-unsigned long lastBlink = 0;
 bool eyesOpen = true;
+unsigned long lastBlink = 0;
 bool inMusicMode = false;
 int progress = 0;
 
@@ -51,13 +51,22 @@ void loop() {
 
   if (Serial.available()) {
     String msg = Serial.readStringUntil('\n');
-    if (!inMusicMode) {
-      display.clearDisplay();
-      display.setCursor(0, 0);
-      display.setTextSize(1);
+    display.clearDisplay();
+    display.setTextSize(1);
+    display.setCursor(0, 0);
+
+    if (msg.startsWith("😊") || msg.startsWith("😢")) {
+      display.setCursor(0, 20);
+      display.setTextSize(2);
       display.print(msg);
-      display.display();
+    } else if (msg.startsWith("☀️") || msg.startsWith("💨") || msg.startsWith("🌧️")) {
+      display.setCursor(0, 20);
+      display.setTextSize(2);
+      display.print(msg);
+    } else {
+      display.print(msg);
     }
+    display.display();
   }
 }
 
