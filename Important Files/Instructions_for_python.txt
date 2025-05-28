@@ -1,0 +1,4 @@
+So first if you are using PyCharm open its terminal and type this command "pip install pyserial SpeechRecognition pyttsx3 requests pygame"
+If you are using different python environment install all the libraries manually.
+the code will only work in that environment's console it willl not open in another app or web ( i have added only 1 music you can add mutiple, for adding multiple music you can go to README and check )
+This is a zip file so all thw whole file in pycharm or any other envirnment, if you are not able to do that just use the resources given like the mp3 of the song,etc.
