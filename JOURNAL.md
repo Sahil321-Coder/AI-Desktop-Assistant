@@ -30,7 +30,7 @@ I have sucessfully programmed the Arduino code and now it has features like taki
 
 ![Screenshot 2025-05-27 132608](https://github.com/user-attachments/assets/bf38f1d7-71b0-46e5-abe1-f88cb06e35c4)
 
-**Total time spent: 3h**
+**Total time spent: 4h**
 
 # May 28th: Programmed the Python Code, compiled & Debugged !!
 
