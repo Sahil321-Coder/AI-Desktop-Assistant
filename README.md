@@ -10,10 +10,7 @@ Features :
 1. Voice Recognition: It uses our built-in laptop or Desktop Mic to listen to what we say, and gives us an answer using the API Key I used ( OpenRouter ),  and it also displays the answer, but in a short version
 on the OLED Display, and also  note that I am using PyCharm Community Edition, so use that only for a better experience and to work it smoothly.
 
-2. Real Time Weather: It shows the real-time weather of the Place where I live ( Nashik ), you can change it by changing the latitude & longitude of the place where you live. I am using Weather Stack API Key
-for this project.
-
-3. Plays Music: I just put 1 music in the Code, you can put more by changing this " ![Screenshot 2025-05-28 124243](https://github.com/user-attachments/assets/844e735f-96ab-49e1-b308-fabf7dba2476) and this also
+2. Plays Music: I just put 1 music in the Code, you can put more by changing this " ![Screenshot 2025-05-28 124243](https://github.com/user-attachments/assets/844e735f-96ab-49e1-b308-fabf7dba2476) and this also
 
 (if you want change this (the second pic))
 
