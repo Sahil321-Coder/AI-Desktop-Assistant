@@ -37,3 +37,4 @@ The Table :
 |Arduino MKR Zero    | Microcontroller Board                                  |Arduino        | $31.20 |   $13.02    |      $44.22         |
 |Rasberry Pi SD Card    | Storage                                 |N/A        | $13.55 |   $2.00    |      $14.55         |   
 |Raspberry Pi 4  B ( 4 GB )  | Offline Controller                                |Robu.in        | $64 |   $2    |      $66         | 
+|Storin Mini Speech Microphone with USB Connector Stand for PC Laptop Desktop  | Microphone                                 |Amazon        | $2.75 |   $0.76    |      $3.51         |
