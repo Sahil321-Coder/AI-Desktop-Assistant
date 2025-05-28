@@ -38,3 +38,8 @@ The Table :
 |Rasberry Pi SD Card    | Storage                                 |N/A        | $13.55 |   $2.00    |      $14.55         |   
 |Raspberry Pi 4  B ( 4 GB )  | Offline Controller                                |Robu.in        | $64 |   $2    |      $66         | 
 |Storin Mini Speech Microphone with USB Connector Stand for PC Laptop Desktop  | Microphone                                 |Amazon        | $2.75 |   $0.76    |      $3.51         |
+|Speaker  | To hear the input                                 |Amazon        | $10 |   $0.76    |      $10.76         |
+|Breadboard  | Alternative to Soldering                                 |Robu.in        | $0.59 |   $0    |      $0.59         |
+|Push Button  | switching between modes                                 |Robu.in        | $0.18 |   $0    |      $0.18         |
+|Jumper Wires  | Connections                                 |Robu.in        | $1.52 |   $0.56    |      $2.076         |
+
