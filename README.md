@@ -3,6 +3,8 @@ Arduino AI Desktop Assistant
 
 My Arduino AI Desktop Assistant is designed to enhance  user experience through voice commands and automation. This project integrates Arduino with machine learning to create an intelligent assistant to perform various tasks.
 
+Note: That the python code should be runed in the PyCharm Community Edition fot better and smooth results.
+
 Features :
 
 1. Voice Recognition: It uses our built-in laptop or Desktop Mic to listen to what we say, and gives us an answer using the API Key I used ( OpenRouter ),  and it also displays the answer, but in a short version
