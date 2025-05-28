@@ -38,4 +38,4 @@ The Table :
 |Power Bank or USB Battery|Main power unit                                                                  |Amazon         |$8.99          |      $1        |   $9.99            |
 |USB Cable |To power Arduino and for uploading code                                                             |Ships with Arduino         |$14.04          |      $3       |       $17.04               |
 |Govo GO Surround 300      |To listen to music and the answers to questions                                                                                |Govo.com         |$5.49          |      $0        |                       |
-|Arduino Uno    | Microcontroller Board                                  |Arduino        | $4.68 |      $2.60     |      $7.28            |
+|Arduino     | Microcontroller Board                                  |Arduino        |  |          |               |
