@@ -32,6 +32,12 @@ I have sucessfully programmed the Arduino code and now it has features like taki
 
 **Total time spent: 3h**
 
+# May 28th: Programmed the Python Code, compiled & Debugged !!
 
+I have programmed the python ocde in PyCharm Community Edition and Debugged it !!
+So, the resources for my Projects are ready and tomorrow i will be finally Debugging them & testing them online !!!1
 
+![Screenshot 2025-05-28 125401](https://github.com/user-attachments/assets/a301933d-f8dd-417f-b3ef-c9551ba70eb8)
+
+**Total time spent: 4.5h**
 
