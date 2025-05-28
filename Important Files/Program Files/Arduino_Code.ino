@@ -1,3 +1,8 @@
+// First, install the Adafruit SSD1306 library.
+// For wiring go to Main>Important Files> ( you will see two option, 1st is in PNG and the other is in.txt , so choose which is better for you!
+// Good Luck!!!!
+
+
 #include <Wire.h>
 #include <Adafruit_SSD1306.h>
 
