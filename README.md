@@ -13,35 +13,14 @@ on the OLED Display, and also  note that I am using PyCharm Community Edition, s
 2. Real Time Weather: It shows the real-time weather of the Place where I live ( Nashik ), you can change it by changing the latitude & longitude of the place where you live. I am using Weather Stack API Key
 for this project.
 
-3. Plays Music: I just put 1 music in the Code, you can put more by changing this " ![Screenshot 2025-05-27 164609](https://github.com/user-attachments/assets/dda8d343-2d02-4760-b268-16123abac819)
+3. Plays Music: I just put 1 music in the Code, you can put more by changing this " ![Screenshot 2025-05-28 124243](https://github.com/user-attachments/assets/844e735f-96ab-49e1-b308-fabf7dba2476) and this also
+
+(if you want change this (the second pic))
+
+![Screenshot 2025-05-28 124256](https://github.com/user-attachments/assets/c1dc43ce-7dea-4e5a-ae08-e7d6df614b02)
+
  " in the python code, it is given in the Important Files > Program Files > Python code.zip ( Note: This will be a Zip file, Extract the zip file, then open Pycharm,the next instructions are given the instructions.txt file in the zip. )
 
-4. Shows Time: It shows the time in the place I live ( Nashik ) , you can change it by changing this command in the file
-
-   I- Find this section in the code :
-   
-   ![Screenshot 2025-05-27 163130](https://github.com/user-attachments/assets/1c23c3c8-913f-4557-9604-83a884fda6df)
-
-   II- To change the location, update this line :
-
-   ![Screenshot 2025-05-27 163139](https://github.com/user-attachments/assets/700832de-9a94-44c6-863c-13788fb94495)
-
-🌍Here are some common time zones:
-
-   New York > "America/New_York"
-   
-   London > "Europe/London"
-   
-   Tokyo > "Asia/Tokyo"
-   
-   Mumbai > "Asia/Kolkata"
-   
-   Berlin > "Europe/Berlin"
-   
-   Sydney > "Australia/Sydney"
-   
-*For eg: Set to London :*
-  location = "Europe/London"
 
 For the materials I used, I have given a BOM File in CSV Format, you can check it.
 
