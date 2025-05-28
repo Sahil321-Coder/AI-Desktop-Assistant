@@ -1,7 +1,7 @@
 So first, if you are using PyCharm, open its terminal and type this command: "pip install pyserial SpeechRecognition pyttsx3 requests pygame"
 If you are using a different Python environment, install all the libraries manually.
-The code will only work in that environment's console, it will not open in another app or web (I have added only 1 music ,you can add multiple, for adding multiple music,c you can go to the README and check )
-This is a folder with all the resources needed for the project are given in hte file like the bot.py (the main code) and a mp3 named song1 (the song).
-Use PyCharm For Better Results use  Community Edititon ( Free ) you can also use different python environment too.
+The code will only work in that environment's console, it will not open in another app or web. I have added only 1 music, you can add multiple. To add multiple music files, so you can go to the README and check.
+This is a folder with all the resources needed for the project are given in the file including the bot.py (the main code) and an MP3 named song1 (the song).
+Use PyCharm For Better Results. Use the  Community Edition ( Free ). You can also use a different Python environment.
 
            ---------------------------------------     Good Luck     ----------------------------
