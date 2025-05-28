@@ -10,100 +10,95 @@
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 #define OLED_RESET -1
+#define BUTTON_PIN 2
+
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-const int buttonPin = 2;
 int mode = 0;
-bool eyesOpen = true;
 unsigned long lastBlink = 0;
-bool inMusicMode = false;
-int progress = 0;
+bool eyesOpen = true;
+String currentEmoji = "neutral";
+
+void drawEyes(bool open) {
+  display.clearDisplay();
+  if (open) {
+    display.fillCircle(40, 32, 10, WHITE);
+    display.fillCircle(88, 32, 10, WHITE);
+  } else {
+    display.drawLine(30, 32, 50, 32, WHITE);
+    display.drawLine(78, 32, 98, 32, WHITE);
+  }
+  display.display();
+}
+
+void drawEmoji(String emoji) {
+  display.clearDisplay();
+  if (emoji == "happy") {
+    display.setCursor(10, 20);
+    display.setTextSize(2);
+    display.print(":)");
+  } else if (emoji == "sad") {
+    display.setCursor(10, 20);
+    display.setTextSize(2);
+    display.print(":(");
+  } else {
+    drawEyes(eyesOpen);
+    return;
+  }
+  display.display();
+}
 
 void setup() {
-  pinMode(buttonPin, INPUT);
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
   Serial.begin(9600);
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+    while (true);
+  }
   display.clearDisplay();
-  drawEyesOpen();
+  display.setTextColor(WHITE);
+  display.setTextSize(1);
+  display.setCursor(0, 0);
+  display.print("Booting...");
   display.display();
+  delay(1000);
+  drawEyes(true);
 }
 
 void loop() {
-  if (digitalRead(buttonPin) == HIGH) {
-    delay(200);
+  static bool lastButtonState = HIGH;
+  bool buttonState = digitalRead(BUTTON_PIN);
+
+  if (lastButtonState == HIGH && buttonState == LOW) {
     mode = (mode + 1) % 4;
     Serial.print("MODE:");
     Serial.println(mode);
-    handleMode(mode);
+    delay(300);
   }
-
-  if (mode == 0 && millis() - lastBlink > 3000) {
-    eyesOpen = !eyesOpen;
-    eyesOpen ? drawEyesOpen() : drawEyesClosed();
-    display.display();
-    lastBlink = millis();
-  }
-
-  if (inMusicMode) {
-    drawProgressBar();
-    delay(500);
-  }
+  lastButtonState = buttonState;
 
   if (Serial.available()) {
-    String msg = Serial.readStringUntil('\n');
-    display.clearDisplay();
-    display.setTextSize(1);
-    display.setCursor(0, 0);
-
-    if (msg.startsWith("😊") || msg.startsWith("😢")) {
-      display.setCursor(0, 20);
-      display.setTextSize(2);
-      display.print(msg);
-    } else if (msg.startsWith("☀️") || msg.startsWith("💨") || msg.startsWith("🌧️")) {
-      display.setCursor(0, 20);
-      display.setTextSize(2);
-      display.print(msg);
+    String input = Serial.readStringUntil('\n');
+    input.trim();
+    if (input.startsWith("EMOJI:")) {
+      currentEmoji = input.substring(6);
+      drawEmoji(currentEmoji);
     } else {
-      display.print(msg);
+      display.clearDisplay();
+      display.setCursor(0, 0);
+      display.setTextSize(1);
+      display.println(input);
+      display.display();
     }
-    display.display();
+  }
+
+  // Eye blinking every 3s in neutral mode
+  if (currentEmoji == "neutral" && mode == 0) {
+    if (millis() - lastBlink > 3000) {
+      eyesOpen = !eyesOpen;
+      drawEyes(eyesOpen);
+      lastBlink = millis();
+    }
   }
 }
 
-void handleMode(int m) {
-  inMusicMode = (m == 3);
-  display.clearDisplay();
-  if (m == 0) drawEyesOpen();
-  else if (m == 1) display.print("Getting weather...");
-  else if (m == 2) display.print("Getting time...");
-  else if (m == 3) {
-    display.print("Music Playing...");
-    progress = 0;
-  }
-  display.display();
-}
-
-void drawEyesOpen() {
-  display.clearDisplay();
-  display.fillCircle(32, 32, 10, WHITE);
-  display.fillCircle(96, 32, 10, WHITE);
-}
-
-void drawEyesClosed() {
-  display.clearDisplay();
-  display.drawLine(22, 32, 42, 32, WHITE);
-  display.drawLine(86, 32, 106, 32, WHITE);
-}
-
-void drawProgressBar() {
-  display.clearDisplay();
-  display.setCursor(0, 0);
-  display.print("Music Playing...");
-  int width = map(progress, 0, 100, 0, 128);
-  display.drawRect(0, 20, 128, 10, WHITE);
-  display.fillRect(0, 20, width, 10, WHITE);
-  display.display();
-  progress += 5;
-  if (progress > 100) progress = 0;
-}
 
