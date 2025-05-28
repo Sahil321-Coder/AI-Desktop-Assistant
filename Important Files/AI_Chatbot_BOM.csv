@@ -1,0 +1,12 @@
+Component,Description,Quantity,Notes
+Arduino MKR Zero,Microcontroller Board,1,Main control unit
+SSD1306 OLED Display,"0.96"" I2C OLED, 128x64",1,For displaying animated eyes
+Breadboard,400-point or similar,1,For prototyping circuit
+Push Button,4-pin tactile push button,1,For user input
+Jumper Wires,Male-to-Male,10+,For circuit connections
+50 CM Micro USB Cable,N/A,1,For  uploading code
+Power Bank or USB Battery,5V Output,1,For Power
+Speaker,"Bluetooth Speaker (e.g., Govo GO Surround 300)",1,For music playback via PC
+Rasberry Pi SD Card,Storage,1,For storage in Rasberry Pi
+Raspberry Pi 4 B ( 4 GB ),Controller,1,Controls the AI 
+Storin Mini Speech Microphone with USB Connector Stand for PC Laptop Desktop,Microphone,1,Listening the Input
