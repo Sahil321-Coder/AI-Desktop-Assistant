@@ -4,62 +4,95 @@
 
 
 #include <Wire.h>
+#include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-#define SCREEN_WIDTH 128
-#define SCREEN_HEIGHT 64
-#define OLED_RESET    -1
+#define OLED_WIDTH 128
+#define OLED_HEIGHT 64
+#define OLED_RESET -1
+#define BUTTON_PIN 2
 
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+Adafruit_SSD1306 display(OLED_WIDTH, OLED_HEIGHT, &Wire, OLED_RESET);
 
-const int buttonPin = 2;  // Mode switch button pin
-int currentMode = 0;
+int mode = 0;
+unsigned long lastBlink = 0;
+bool eyesOpen = true;
+String lastLine = "";
 
 void setup() {
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
   Serial.begin(9600);
-  pinMode(buttonPin, INPUT_PULLUP);
-
-  if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
-    while (true); // Halt if OLED not found
-  }
-
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   display.clearDisplay();
-  display.setTextSize(1);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(0, 0);
-  display.println("Assistant Ready");
   display.display();
-  delay(2000);
-
-  sendModeToPython();
+  showEyes();
 }
 
 void loop() {
-  static int lastButtonState = HIGH;
-  int buttonState = digitalRead(buttonPin);
-
-  // Detect button press (falling edge)
-  if (buttonState == LOW && lastButtonState == HIGH) {
-    currentMode = (currentMode + 1) % 4;  // Cycle through 0 to 3
-    sendModeToPython();
-    delay(300);  // Debounce delay
+  if (digitalRead(BUTTON_PIN) == LOW) {
+    delay(300);
+    mode = (mode + 1) % 4;
+    Serial.print("MODE:");
+    Serial.println(mode);
+    handleMode();
   }
-  lastButtonState = buttonState;
 
-  // Read incoming serial from Python (short text to display)
+  if (mode == 0 && millis() - lastBlink > 3000) {
+    eyesOpen = !eyesOpen;
+    showEyes();
+    lastBlink = millis();
+  }
+
   if (Serial.available()) {
-    String line = Serial.readStringUntil('\n');
+    String incoming = Serial.readStringUntil('\n');
+    lastLine = incoming;
     display.clearDisplay();
-    display.setCursor(0, 0);
     display.setTextSize(1);
-    display.println("Mode: " + String(currentMode));
-    display.println();
-    display.println(line);
+    display.setCursor(0, 0);
+    display.setTextColor(SSD1306_WHITE);
+    display.println(incoming);
     display.display();
+    showEmoji(incoming);
   }
 }
 
-void sendModeToPython() {
-  Serial.print("MODE:");
-  Serial.println(currentMode);
+void handleMode() {
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setCursor(0, 0);
+  display.setTextColor(SSD1306_WHITE);
+
+  if (mode == 1) display.println("Fetching weather...");
+  else if (mode == 2) display.println("Getting time...");
+  else if (mode == 3) display.println("Playing music...");
+  else showEyes();
+
+  display.display();
 }
+
+void showEyes() {
+  display.clearDisplay();
+  display.setTextSize(3);
+  display.setCursor(30, 20);
+  display.setTextColor(SSD1306_WHITE);
+  if (eyesOpen)
+    display.print("o o");
+  else
+    display.print("- -");
+  display.display();
+}
+
+void showEmoji(String text) {
+  if (text.indexOf("happy") >= 0) {
+    display.setCursor(90, 50);
+    display.print(":)");
+  } else if (text.indexOf("sad") >= 0 || text.indexOf("error") >= 0) {
+    display.setCursor(90, 50);
+    display.print(":(");
+  } else {
+    display.setCursor(90, 50);
+    display.print(":|");
+  }
+  display.display();
+}
+
