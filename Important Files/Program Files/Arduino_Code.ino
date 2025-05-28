@@ -7,92 +7,94 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-#define OLED_WIDTH 128
-#define OLED_HEIGHT 64
+#define SCREEN_WIDTH 128
+#define SCREEN_HEIGHT 64
 #define OLED_RESET -1
-#define BUTTON_PIN 2
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-Adafruit_SSD1306 display(OLED_WIDTH, OLED_HEIGHT, &Wire, OLED_RESET);
-
+const int buttonPin = 2;
 int mode = 0;
 unsigned long lastBlink = 0;
 bool eyesOpen = true;
-String lastLine = "";
+bool inMusicMode = false;
+int progress = 0;
 
 void setup() {
-  pinMode(BUTTON_PIN, INPUT_PULLUP);
+  pinMode(buttonPin, INPUT);
   Serial.begin(9600);
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
   display.clearDisplay();
+  drawEyesOpen();
   display.display();
-  showEyes();
 }
 
 void loop() {
-  if (digitalRead(BUTTON_PIN) == LOW) {
-    delay(300);
+  if (digitalRead(buttonPin) == HIGH) {
+    delay(200);
     mode = (mode + 1) % 4;
     Serial.print("MODE:");
     Serial.println(mode);
-    handleMode();
+    handleMode(mode);
   }
 
   if (mode == 0 && millis() - lastBlink > 3000) {
     eyesOpen = !eyesOpen;
-    showEyes();
+    eyesOpen ? drawEyesOpen() : drawEyesClosed();
+    display.display();
     lastBlink = millis();
   }
 
+  if (inMusicMode) {
+    drawProgressBar();
+    delay(500);
+  }
+
   if (Serial.available()) {
-    String incoming = Serial.readStringUntil('\n');
-    lastLine = incoming;
-    display.clearDisplay();
-    display.setTextSize(1);
-    display.setCursor(0, 0);
-    display.setTextColor(SSD1306_WHITE);
-    display.println(incoming);
-    display.display();
-    showEmoji(incoming);
+    String msg = Serial.readStringUntil('\n');
+    if (!inMusicMode) {
+      display.clearDisplay();
+      display.setCursor(0, 0);
+      display.setTextSize(1);
+      display.print(msg);
+      display.display();
+    }
   }
 }
 
-void handleMode() {
+void handleMode(int m) {
+  inMusicMode = (m == 3);
   display.clearDisplay();
-  display.setTextSize(1);
+  if (m == 0) drawEyesOpen();
+  else if (m == 1) display.print("Getting weather...");
+  else if (m == 2) display.print("Getting time...");
+  else if (m == 3) {
+    display.print("Music Playing...");
+    progress = 0;
+  }
+  display.display();
+}
+
+void drawEyesOpen() {
+  display.clearDisplay();
+  display.fillCircle(32, 32, 10, WHITE);
+  display.fillCircle(96, 32, 10, WHITE);
+}
+
+void drawEyesClosed() {
+  display.clearDisplay();
+  display.drawLine(22, 32, 42, 32, WHITE);
+  display.drawLine(86, 32, 106, 32, WHITE);
+}
+
+void drawProgressBar() {
+  display.clearDisplay();
   display.setCursor(0, 0);
-  display.setTextColor(SSD1306_WHITE);
-
-  if (mode == 1) display.println("Fetching weather...");
-  else if (mode == 2) display.println("Getting time...");
-  else if (mode == 3) display.println("Playing music...");
-  else showEyes();
-
+  display.print("Music Playing...");
+  int width = map(progress, 0, 100, 0, 128);
+  display.drawRect(0, 20, 128, 10, WHITE);
+  display.fillRect(0, 20, width, 10, WHITE);
   display.display();
-}
-
-void showEyes() {
-  display.clearDisplay();
-  display.setTextSize(3);
-  display.setCursor(30, 20);
-  display.setTextColor(SSD1306_WHITE);
-  if (eyesOpen)
-    display.print("o o");
-  else
-    display.print("- -");
-  display.display();
-}
-
-void showEmoji(String text) {
-  if (text.indexOf("happy") >= 0) {
-    display.setCursor(90, 50);
-    display.print(":)");
-  } else if (text.indexOf("sad") >= 0 || text.indexOf("error") >= 0) {
-    display.setCursor(90, 50);
-    display.print(":(");
-  } else {
-    display.setCursor(90, 50);
-    display.print(":|");
-  }
-  display.display();
+  progress += 5;
+  if (progress > 100) progress = 0;
 }
 
