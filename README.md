@@ -31,7 +31,7 @@ The Table :
 |SSD1306 OLED Display           |For displaying animated eyes, Time, Short Answers, & Weather                                                                                    |Robu.in     |$5.81            |      $0.25       |  $6.06                     |
 |Power Bank|Main power unit                                                                  |Amazon         |$3.00          |      $1        |   $4.00            |
 |50 CM Micro USB Cable |To power Arduino and for uploading code                                                             |Robu.in         |$0.37          |      $0.24       |       $0.61              |
-|Arduino MKR Zero    | Microcontroller Board                                  |Arduino        | $31.20 |   $13.02    |      $44.22         |
+|ESP32 DevKit1 Board    | Microcontroller Board                                  |Arduino        | $10.29 |   $0    |      $10.29        |
 |Rasberry Pi SD Card    | Storage                                 |Robu.in       | $5.23 |   $0    |      $5.23        |   
 |Raspberry Pi 4  B ( 4 GB )  | Offline Controller                                |Robu.in        | $64 |   $2    |      $66         | 
 |Microphone For Raspberry Pi  | Microphone                                 |Robu.in        | $2.33 |   $0    |      $2.33         |
