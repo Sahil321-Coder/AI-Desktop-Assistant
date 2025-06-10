@@ -3,7 +3,6 @@ So go to this link and download the Vosk Model:
 ```bash
 https://drive.google.com/file/d/1T71CqJtids5uGRgI336hIendSkgdtNLh/view?usp=drive_link
 ```
-
 or click here
 
 
