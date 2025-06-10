@@ -1,14 +1,16 @@
-OLED Display
+ESP32 → OLED (SSD1306 - I2C)
 
-VCC > 5.5V
-GND > GND
-SCL > A5
-SDA > A4
+| OLED Pin | ESP32 Pin | Description |
+| -------- | --------- | ----------- |
+| VCC      | 3.3V      | Power       |
+| GND      | GND       | Ground      |
+| SDA      | GPIO 21   | I2C Data    |
+| SCL      | GPIO 22   | I2C Clock   |
 
 
-Push Button
+| Button Pin | ESP32 Pin | Pull-up in code      |
+| ---------- | --------- | -------------------- |
+| One side   | GPIO 18   | Yes (`INPUT_PULLUP`) |
+| Other side | GND       | —                    |
 
-One leg > GND
-Other  Leg > D2
 
-( Note : Use a 4 Pin Push Button )
