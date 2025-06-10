@@ -10,7 +10,7 @@
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 #define OLED_RESET -1
-#define BUTTON_PIN 2
+#define BUTTON_PIN 18
 
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
@@ -49,6 +49,7 @@ void drawEmoji(String emoji) {
 }
 
 void setup() {
+  Wire.begin(21, 22); // ESP32 I2C pins
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   Serial.begin(9600);
   if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
@@ -91,7 +92,6 @@ void loop() {
     }
   }
 
-  // Eye blinking every 3s in neutral mode
   if (currentEmoji == "neutral" && mode == 0) {
     if (millis() - lastBlink > 3000) {
       eyesOpen = !eyesOpen;
@@ -100,5 +100,3 @@ void loop() {
     }
   }
 }
-
-
