@@ -40,3 +40,20 @@ The Table :
 |Push Button  | switching between modes                                 |Robu.in        | $0.18 |   $0    |      $0.18         |
 |Jumper Wires  | Connections                                 |Robu.in        | $1.52 |   $0.56    |      $2.076         |
 
+
+
+This is how your Project Folder should look like -
+```bash
+project/
+│
+├── voice_assistant.py
+├── song1.mp3
+└── vosk-model-small-en-us-0.15/  <- unzip model here
+```
+
+
+To run the code Run this in your IDE's Terminal or Command Prompt.
+
+```bash
+python3 voice_assistant.py
+```
