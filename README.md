@@ -29,12 +29,12 @@ The Table :
 |     Item      |                                                        Purpose                                                               |     Source    |     Price     |    Shipping    | Total Price
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------- | -------------- | --------------------- |
 |SSD1306 OLED Display           |For displaying animated eyes, Time, Short Answers, & Weather                                                                                    |Robu.in     |$5.81            |      $0.25       |  $6.06                     |
-|Power Bank or USB Battery|Main power unit                                                                  |Amazon         |$8.99          |      $1        |   $9.99            |
+|Power Bank|Main power unit                                                                  |Amazon         |$3.00          |      $1        |   $4.00            |
 |50 CM Micro USB Cable |To power Arduino and for uploading code                                                             |Robu.in         |$0.37          |      $0.24       |       $0.61              |
 |Arduino MKR Zero    | Microcontroller Board                                  |Arduino        | $31.20 |   $13.02    |      $44.22         |
-|Rasberry Pi SD Card    | Storage                                 |N/A        | $13.55 |   $2.00    |      $14.55         |   
+|Rasberry Pi SD Card    | Storage                                 |Robu.in       | $5.23 |   $0    |      $5.23        |   
 |Raspberry Pi 4  B ( 4 GB )  | Offline Controller                                |Robu.in        | $64 |   $2    |      $66         | 
-|Storin Mini Speech Microphone with USB Connector Stand for PC Laptop Desktop  | Microphone                                 |Amazon        | $2.75 |   $0.76    |      $3.51         |
+|Microphone For Raspberry Pi  | Microphone                                 |Robu.in        | $2.33 |   $0    |      $2.33         |
 |Speaker  | To hear the input                                 |Amazon        | $10 |   $0.76    |      $10.76         |
 |Breadboard  | Alternative to Soldering                                 |Robu.in        | $0.59 |   $0    |      $0.59         |
 |Push Button  | switching between modes                                 |Robu.in        | $0.18 |   $0    |      $0.18         |
