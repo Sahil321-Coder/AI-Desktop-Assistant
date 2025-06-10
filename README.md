@@ -3,8 +3,6 @@ Arduino AI Desktop Assistant
 
 #Total Cost needed for this Project is:
 
-```bash
-
 
 My Arduino AI Desktop Assistant is designed to enhance  user experience through voice commands and automation. This project integrates Arduino with machine learning to create an intelligent assistant to perform various tasks.
 
