@@ -37,14 +37,16 @@ These are the pictures of the 3D Model I was making in FreeCAD 1.0.1.
 ![photo-collage png](https://github.com/user-attachments/assets/8361d703-f25a-4596-a705-97a59178907d)
 
 
+This is the picture for Wirirng Diagram I Created in Wokwi:
 
+![Screenshot 2025-06-11 114641](https://github.com/user-attachments/assets/42f1a500-7593-459d-8736-54705fc85e00)
 
+If you want to see it in Wokwi, go to this link below:
+Note: I have just made the wiring Diagram not written the code there.
 
-
-
-
-
-
+```bash
+https://wokwi.com/projects/433443551673204737
+```
 
 
 
