@@ -1,9 +1,11 @@
 ---
-Title: "AI Desktop Assistant"
+Title: "AI Desktop Assistant(RasBuddy)"
 Author: "sahilthecoder"
 Description: "An AI Desk Assistant Ideal For Working"
 Created_at: "25-05-2025"
 ---
+# Total Time Spent =   13.7 Hours
+
 
 # May 25th: Designed The 3D Model in FreeCAD!
 
