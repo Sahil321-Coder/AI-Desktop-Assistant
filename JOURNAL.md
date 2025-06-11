@@ -11,7 +11,7 @@ I started by taking measurements of Arduino and other parts I am going to use, a
 
 ![photo-collage png](https://github.com/user-attachments/assets/2e3c0edd-3f1f-48d6-ae8a-4551cb07ce5e)
 Here is the video:
-![video.mp4](https://github.com/user-attachments/assets/6cfeaed8-67e0-4f16-bff8-21d767192454)
+[video_3D File.mp4](https://github.com/user-attachments/assets/6cfeaed8-67e0-4f16-bff8-21d767192454)
 
 **Total time spent: 3.2h**
 
@@ -23,7 +23,7 @@ So I have made this Circuit Diagram in WOKWI, and you can also see the BOM File 
 ![Screenshot 2025-06-11 114641](https://github.com/user-attachments/assets/e7d611b6-b6a6-4283-86b4-d7012cfb0ed3)
 
 Video:
-
+[video_Wokwi.mp4](https://github.com/user-attachments/assets/c5a8b59b-6847-44fe-9b87-750b83764de6)
 
 **Total time spent: 2h**
 
