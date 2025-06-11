@@ -22,6 +22,7 @@ So I have made this Circuit Diagram in WOKWI, and you can also see the BOM File 
 
 ![Screenshot 2025-06-11 114641](https://github.com/user-attachments/assets/e7d611b6-b6a6-4283-86b4-d7012cfb0ed3)
 
+Video:
 
 
 **Total time spent: 2h**
