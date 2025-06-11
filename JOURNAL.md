@@ -10,7 +10,8 @@ Created_at: "25-05-2025"
 I started by taking measurements of Arduino and other parts I am going to use, and designed it so that all these would fit inside the 3D Model, and successfully made the 3D Model.
 
 ![photo-collage png](https://github.com/user-attachments/assets/2e3c0edd-3f1f-48d6-ae8a-4551cb07ce5e)
-
+Here is the video:
+![video.mp4](https://github.com/user-attachments/assets/6cfeaed8-67e0-4f16-bff8-21d767192454)
 
 **Total time spent: 3.2h**
 
@@ -19,7 +20,8 @@ I started by taking measurements of Arduino and other parts I am going to use, a
 So I have made this Circuit Diagram in WOKWI, and you can also see the BOM File in CSV Format on the Main page, I have listed all the the materials I have used in that file.
 ( Instead of Arduino MKR Zero I am using ESP32 Note it )
 
-![photo-collage png](https://github.com/user-attachments/assets/ec99eee1-631d-403a-828e-08843bb64b12)
+![Screenshot 2025-06-11 114641](https://github.com/user-attachments/assets/e7d611b6-b6a6-4283-86b4-d7012cfb0ed3)
+
 
 
 **Total time spent: 2h**
