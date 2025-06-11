@@ -4,7 +4,7 @@ Author: "sahilthecoder"
 Description: "An AI Desk Assistant Ideal For Working"
 Created_at: "25-05-2025"
 ---
-# Total Time Spent =   13.7 Hours
+# Total Time Spent =   28.2 Hours
 
 
 # May 25th: Designed The 3D Model in FreeCAD!
@@ -15,7 +15,7 @@ I started by taking measurements of Arduino and other parts I am going to use, a
 Here is the video:
 [video_3D File.mp4](https://github.com/user-attachments/assets/6cfeaed8-67e0-4f16-bff8-21d767192454)
 
-**Total time spent: 3.2h**
+**Total time spent: 6.7h**
 
 # May 26th: Made the BOM File and the Wiring Diagram!
 
@@ -27,7 +27,7 @@ So I have made this Circuit Diagram in WOKWI, and you can also see the BOM File 
 Video:
 [video_Wokwi.mp4](https://github.com/user-attachments/assets/c5a8b59b-6847-44fe-9b87-750b83764de6)
 
-**Total time spent: 2h**
+**Total time spent: 3.4h**
 
 # May 27th: Programmed the ESP32 Code and compiled!
 
@@ -35,7 +35,7 @@ I have successfully programmed the ESP32 code and now it has features like takin
 
 
 
-**Total time spent: 4h**
+**Total time spent: 7.5h**
 
 # May 28th: Programmed the Python Code, compiled & Debugged !!
 
@@ -44,5 +44,5 @@ So, the resources for my Projects are ready and tomorrow i will be finally Debug
 
 ![Screenshot 2025-05-28 125401](https://github.com/user-attachments/assets/a301933d-f8dd-417f-b3ef-c9551ba70eb8)
 
-**Total time spent: 4.5h**
+**Total time spent: 10.6h**
 
