@@ -25,10 +25,11 @@ on the OLED Display, and also  note that I am using PyCharm Community Edition, s
 
 ![Screenshot 2025-05-28 124256](https://github.com/user-attachments/assets/c1dc43ce-7dea-4e5a-ae08-e7d6df614b02)
 
- " in the python code, it is given in the Important Files > Program Files > Python code ( Note: This will be a folder, open the folder, and take all the files you want, use PyCharm for better performance and smooth work, if you are using different environment(I don't know it will work or not)for more instructions refer to Instructions folder in Important Files > Instructions_for_python.txt )
-
+ " in the python code, it is given in the Important Files > Program Files > Python code ( Note: This will be a folder, open the folder, and take all the files you want, use PyCharm for better performance and smooth work, if you are using different environment(I don't know it will work or not).
 
 For the materials I used, I have given a BOM File in CSV Format, you can check it.
+
+Also I have given the BOM File in Table format Below.
 
 
 *Important*
