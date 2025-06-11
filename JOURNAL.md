@@ -12,23 +12,23 @@ I started by taking measurements of Arduino and other parts I am going to use, a
 ![photo-collage png](https://github.com/user-attachments/assets/2e3c0edd-3f1f-48d6-ae8a-4551cb07ce5e)
 
 
-**Total time spent: 1.7h**
+**Total time spent: 3.2h**
 
 # May 26th: Made the BOM File and the Wiring Diagram!
 
 So I have made this Circuit Diagram in WOKWI, and you can also see the BOM File in CSV Format on the Main page, I have listed all the the materials I have used in that file.
-( Instead of Arduino UNO i am using Arduino MKR Zero )
-![Screenshot 2025-05-26 154405](https://github.com/user-attachments/assets/a7dc0d99-2674-40f5-b842-e473253d194b)
+( Instead of Arduino MKR Zero I am using ESP32 Note it )
+
+![photo-collage png](https://github.com/user-attachments/assets/ec99eee1-631d-403a-828e-08843bb64b12)
 
 
+**Total time spent: 2h**
 
-**Total time spent: 1h**
+# May 27th: Programmed the ESP32 Code and compiled!
 
-# May 27th: Programmed the Arduino Code and compiled!
+I have successfully programmed the Arduino code and now it has features like taking real time weather in Nashik ( Where I live), It will take weatehr from the API Key of Openweather, and also plays music , I  have just put 1 Music inside it, so it will play only one. This is the Wokwi Simulation Link "https://wokwi.com/projects/432008413019172865"
 
-I have sucessfully programmed the Arduino code and now it has features like taking real time weather in Nashik ( Where I Live ), It will take weatehr from the API Key of Openweather, and also plays music , I  have just put 1 Music inside it so it will play only one. This is the Wokwi Simulation Link "https://wokwi.com/projects/432008413019172865"
 
-![Screenshot 2025-05-27 132608](https://github.com/user-attachments/assets/bf38f1d7-71b0-46e5-abe1-f88cb06e35c4)
 
 **Total time spent: 4h**
 
