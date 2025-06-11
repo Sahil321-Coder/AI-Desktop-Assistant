@@ -31,7 +31,7 @@ Video:
 
 # May 27th: Programmed the ESP32 Code and compiled!
 
-I have successfully programmed the Arduino code and now it has features like taking real time weather in Nashik ( Where I live), It will take weatehr from the API Key of Openweather, and also plays music , I  have just put 1 Music inside it, so it will play only one. This is the Wokwi Simulation Link "https://wokwi.com/projects/432008413019172865"
+I have successfully programmed the ESP32 code and now it has features like taking real time weather in Nashik ( Where I live), It will take weatehr from the API Key of Openweather, and also plays music , I  have just put 1 Music inside it, so it will play only one. This is the Wokwi Simulation Link "https://wokwi.com/projects/433443551673204737"
 
 
 
