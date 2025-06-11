@@ -11,6 +11,7 @@ My Arduino AI Desktop Assistant is designed to enhance  user experience through 
 Note: The Python code should be run in the PyCharm Community Edition for better and smoother results.
 
 What my Project is:
+
 So Basically my project is a collection of micrcontrollers and more electronics components thta make a AI DESKTOP ASSISTANT, this idea is mainly focused for Working People who don't have time for opening their mobile seeing hte climate, time and also to find answers to their questions, so for that i have inventes this AI DESKTOP ASSISTANT for them, beacuse it will just listen to their commands and answer it by voice and also it will be also taking care of you privacy because it will only listen to everything when we say the wake word "Hi Buddy!". This bot also focuses on kids who need help with their homework, etc, and it will talk to everyone like a friendly assistant. It is not compatible with Alexa and Google Home, but it does have some basic features, such as telling time and answering basic questions like "What is ESP32?"
 Features :
 
