@@ -8,16 +8,19 @@ $88.19
 
 My Arduino AI Desktop Assistant is designed to enhance  user experience through voice commands and automation. This project integrates Arduino with machine learning to create an intelligent assistant to perform various tasks.
 
-Note: That the python code should be runed in the PyCharm Community Edition fot better and smooth results.
+Note: The Python code should be run in the PyCharm Community Edition for better and smoother results.
 
+What my Project is:
+So Basically my project is a collection of micrcontrollers and more electronics components thta make a AI DESKTOP ASSISTANT, this idea is mainly focused for Working People who don't have time for opening their mobile seeing hte climate, time and also to find answers to their questions, so for that i have inventes this AI DESKTOP ASSISTANT for them, beacuse it will just listen to their commands and answer it by voice and also it will be also taking care of you privacy because it will only listen to everything when we say the wake word "Hi Buddy!". This bot also focuses on kids who need help with their homework, etc, and it will talk to everyone like a friendly assistant. It is not compatible with Alexa and Google Home, but it does have some basic features, such as telling time and answering basic questions like "What is ESP32?"
 Features :
 
 1. Voice Recognition: It uses our built-in laptop or Desktop Mic to listen to what we say, and gives us an answer using the API Key I used ( OpenRouter ),  and it also displays the answer, but in a short version
 on the OLED Display, and also  note that I am using PyCharm Community Edition, so use that only for a better experience and to work it smoothly.
 
-2. Plays Music: I just put 1 music in the Code, you can put more by changing this " ![Screenshot 2025-05-28 124243](https://github.com/user-attachments/assets/844e735f-96ab-49e1-b308-fabf7dba2476) and this also
+2. Time Changing: It also tells time according to your time zone in your area by the API key.
+3. Plays Music: I just put 1 music in the Code, you can put more by changing this "![Screenshot 2025-05-28 124243](https://github.com/user-attachments/assets/844e735f-96ab-49e1-b308-fabf7dba2476) and this also
 
-(if you want change this (the second pic))
+(If you want to change this (the second pic))
 
 ![Screenshot 2025-05-28 124256](https://github.com/user-attachments/assets/c1dc43ce-7dea-4e5a-ae08-e7d6df614b02)
 
@@ -28,6 +31,22 @@ For the materials I used, I have given a BOM File in CSV Format, you can check i
 
 
 *Important*
+Pictures:
+These are the pictures of the 3D Model I was making in FreeCAD 1.0.1.
+
+![photo-collage png](https://github.com/user-attachments/assets/8361d703-f25a-4596-a705-97a59178907d)
+
+
+
+
+
+
+
+
+
+
+
+
 
 The Table :
 
