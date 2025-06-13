@@ -57,17 +57,16 @@ The Table :
 
 |     Item      |                                                        Purpose                                                               |     Source    |     Price     |    Shipping    | Total Price
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------- | ------------- | -------------- | --------------------- |
-|SSD1306 OLED Display           |For displaying animated eyes, Time, Short Answers, & Weather                                                                                    |Robu.in     |$5.81            |      $0.25       |  $6.06                     |
-|Power Bank|Main power unit                                                                  |Amazon         |$3.00          |      $1        |   $4.00            |
-|50 CM Micro USB Cable |To power Arduino and for uploading code                                                             |Robu.in         |$0.37          |      $0.24       |       $0.61              |
-|ESP32 DevKit1 Board    | Microcontroller Board                                  |Arduino        | $10.29 |   $0    |      $10.29        |
-|Rasberry Pi SD Card    | Storage                                 |Robu.in       | $5.23 |   $0    |      $5.23        |   
-|Raspberry Pi 4  B ( 4 GB )  | Offline Controller                                |Robu.in        | $64 |   $2    |      $66         | 
-|Microphone For Raspberry Pi  | Microphone                                 |Robu.in        | $2.33 |   $0    |      $2.33         |
-|Speaker  | To hear the input                                 |Amazon        | $10 |   $0.76    |      $10.76         |
-|Breadboard  | Alternative to Soldering                                 |Robu.in        | $0.59 |   $0    |      $0.59         |
-|Push Button  | switching between modes                                 |Robu.in        | $0.18 |   $0    |      $0.18         |
-|Jumper Wires  | Connections                                 |Robu.in        | $1.52 |   $0.56    |      $2.076         |
+|SSD1306 OLED Display           |For displaying animated eyes, Time, Short Answers, & Weather                                                                                    |EBhoot     |$1.56           |      $0.25       |  $1.78                     |
+|50 CM Micro USB Cable |To power Arduino and for uploading code                                                             |EBhoot         |$0.28          |      $0       |       $0.28              |
+|ESP32 DevKit1 Board    | Microcontroller Board                                  |EBhoot        | $3.14 |   $0    |      $3.14       |
+|Rasberry Pi SD Card    | Storage                                 |Robu.in       | $4.10 |   $0    |      $4.10        |   
+|Raspberry Pi 4  B ( 4 GB )  | Offline Controller                                |RoboticsDNA        | $55.2 |   $1    |      $56.2         | 
+|Microphone For Raspberry Pi  | Microphone                                 |SilverLine Electronics        | $3.48 |   $0    |      $3.48         |
+|Speaker  | To hear the input                                 |N/A        | $5 |   $0    |      $5         |
+|Breadboard  | Alternative to Soldering                                 |RoboSAP        | $0.81 |   $0    |      $0.81         |
+|Push Button  | switching between modes                                 |EBhoot        | $0.012 |   $0    |      $0.012         |
+|Jumper Wires  | Connections                                 |EBhoot        | $1.22 |   $0.0    |      $1.22         |
 
 
 
