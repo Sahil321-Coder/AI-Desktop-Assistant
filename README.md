@@ -34,9 +34,10 @@ Also I have given the BOM File in Table format Below.
 
 *Important*
 Pictures:
-These are the pictures of the 3D Model I was making in FreeCAD 1.0.1.
+These are the pictures of the 3D Model I was making in FreeCAD 1.0.1 & Blender.
 
-![photo-collage png](https://github.com/user-attachments/assets/8361d703-f25a-4596-a705-97a59178907d)
+![photo-collage png](https://github.com/user-attachments/assets/c36c5b24-277b-4fdd-8ff3-3f915d87a6b8)
+
 
 
 This is the picture for Wirirng Diagram I Created in Wokwi:
