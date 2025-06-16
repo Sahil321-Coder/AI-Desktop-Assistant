@@ -44,7 +44,8 @@ Also I have given the BOM File in Table format Below.
 Pictures:
 These are the pictures of the 3D Model I was making in FreeCAD 1.0.1 & Blender.
 
-![photo-collage png](https://github.com/user-attachments/assets/c36c5b24-277b-4fdd-8ff3-3f915d87a6b8)
+
+![Collage](https://github.com/user-attachments/assets/aaf13fcd-d6bd-4c92-abd2-448acd640c53)
 
 
 
